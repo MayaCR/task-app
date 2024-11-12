@@ -6,11 +6,10 @@
 		<title><%= htmlWebpackPlugin.options.title %></title>
 	</head>
 	<body>
-		<div id="app-title"><%= htmlWebpackPlugin.options.title %></div>
 		<div id="wrapper">
 			<div id="sidebar">
+				<div class="app-title"><%= htmlWebpackPlugin.options.title %></div>
 				<div id="links">
-					<h2 class="header">Tasks</h2>
 					<button id="inboxBtn" class="btn">Inbox</button>
 					<button id="todayBtn" class="btn">Today</button>
 					<button id="upcomingBtn" class="btn">Upcoming</button>
@@ -21,8 +20,9 @@
 				</div>
 			</div>
 			<div id="main">
-				<h1 id="section-header">Header</h1>
-				<div id="task-wrapper"></div>
+				<h1 id="listHeader">Header</h1>
+				<div id="listWrapper"></div>
+				<button id="addTaskBtn" class="btn">+ Add task</button>
 			</div>
 		</div>
 	</body>
