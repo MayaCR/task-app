@@ -21,6 +21,13 @@ h2 {
 	font-size: 1.8rem;
 }
 
+.btn {
+	cursor: pointer;
+	text-align: left;
+	font-weight: 600;
+	padding: 1em 0 1em 1.4em;
+}
+
 #wrapper {
 	display: flex;
 	justify-content: center;
@@ -28,10 +35,15 @@ h2 {
 
 #sidebar {
 	width: 20%;
-	padding: 6em;
+	padding: 6em 4em;
 
-	div:nth-child(2) {
+	div:nth-child(3) {
 		margin-top: 4em;
+	}
+
+	.app-title {
+		font-size: 3rem;
+		padding-bottom: 1em;
 	}
 
 	.header {
@@ -40,10 +52,8 @@ h2 {
 
 	#links button {
 		width: 100%;
-		text-align: left;
-		font-weight: 600;
-		padding: 1em 0 1em 1.4em;
 		background-color: transparent;
+		/* border: 1px solid black; */
 
 		&:hover {
 			color: lightgrey;
@@ -51,12 +61,16 @@ h2 {
 	}
 }
 
-#app-title {
-	font-size: 3rem;
-	padding: 1em 1em;
-}
-
 #main {
-	width: 70%;
+	width: 50%;
 	padding: 6em;
+
+	#listWrapper {
+		margin: 1.4em 0;
+	}
+
+	#addTaskBtn {
+		width: 100%;
+		text-align: left;
+	}
 }
