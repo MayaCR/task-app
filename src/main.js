@@ -1,12 +1,13 @@
 import './styles/main.css'
-import { updateTaskView } from './modules/UIManager'
+import { View } from './modules/view'
 
-const inboxBtn = document.querySelector('#inboxBtn')
-const todayBtn = document.querySelector('#todayBtn')
-const upcomingBtn = document.querySelector('#upcomingBtn')
-const allBtn = document.querySelector('#allBtn')
+const view = new View()
 
-inboxBtn.addEventListener('click', updateTaskView)
-todayBtn.addEventListener('click', updateTaskView)
-upcomingBtn.addEventListener('click', updateTaskView)
-allBtn.addEventListener('click', updateTaskView)
+document.addEventListener('DOMContentLoaded', () => {
+	view.initializeView()
+})
+
+document.addEventListener('click', (e) => {
+	view.clearContent()
+	view.updateView(e)
+})
