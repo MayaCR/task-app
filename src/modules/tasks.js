@@ -35,5 +35,6 @@ export class Task {
 		)
 
 		tasks.push(task)
+		console.log('Task added')
 	}
 }
